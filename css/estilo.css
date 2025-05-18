@@ -1,0 +1,259 @@
+/* Estilos CSS*/
+
+    /* Primer archivo CSS realizado por Oscar Cardeña Gutiérrez.
+       Queda mucho por aprender, pero éste es el comienzo... 
+       El responsive lo tengo atragantado, al emular un móvil en el ordenador no hay problema, 
+       pero no consigo que funcione cuando me descomprimo los archivos en el teléfono.
+       */
+
+    [hidden] {
+        display: none;
+    }
+
+    html {
+        font-size: 100%;
+        font-size: 62.5%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+    audio,
+    canvas,
+    video {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        max-width: 100%;
+        height: auto;
+    } 
+    .video-wrapper {
+        width: 600px;
+        max-width: 100%;
+    } 
+    /* Para animaciones */
+    p {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      } /**/
+body{
+    background-color: rgb(196, 194, 194);
+    font-size: 1.6rem; /* =16px */
+}
+img {
+    transition:transform 0.25s ease;
+    max-width: 100%;
+    min-width: 25%;
+    height: auto;
+    }
+    
+    img:hover {
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+    }
+
+/* Estilo de la cabecera */
+
+/*header p{
+    text-align: center;
+}
+header p img{
+    width: 220px;
+    min-width: 25%;
+}*/
+
+/* Estilo de la navegación */
+
+/* Ponemos formato a las listas ul*/
+
+nav ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+nav ul li{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    min-width: 180px;
+    background-color: rgb(212, 210, 207);
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+nav ul li:hover{
+    background-color: black;
+}
+nav ul li:hover a{
+    color: white;
+}
+ul p img{
+    width: calc(100% - 220px); 
+  }
+ul p img.cover{
+    object-fit: cover;
+  } /**/
+  /* Primer archivo CSS realizado por Oscar Cardeña Gutiérrez */
+ /* Ponemos formato a las listas ol */
+article ol{
+    list-style: none;
+    padding:0;
+    margin:0;
+    text-align: left;
+}
+article ol li {
+    border: 1px solid black;
+    background-color: rgb(212, 210, 207);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    min-width: 220px;
+}
+article ol li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+article ol li:hover{
+    background-color: black;
+}
+article ol li:hover a{
+    color: white;
+}
+/* Estilo de la sección */
+section{
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 55%;
+    margin: 20px;
+    padding: 20px;
+}
+section article h1{
+    text-transform: uppercase;
+    font-size: 2.4rem; /* =24px */
+    border-bottom: 1px dashed black;
+}
+ /* Estilo del aside */
+/* Primer archivo CSS realizado por Oscar Cardeña Gutiérrez */
+aside{
+    list-style: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: right;
+    margin: 0px;
+    padding: 8px;
+    width: 30%;
+}
+aside h3{
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+aside p{
+    text-align: center;
+}
+aside p img{
+    width: calc(120% - 260px); 
+  }
+aside p img.cover{
+    object-fit: cover;
+  }
+  /* Estilo El Autor */
+ /* Primer archivo CSS realizado por Oscar Cardeña Gutiérrez */
+  aside img.hover_effect:hover{
+    height: 100%;
+    width: auto;
+  }                
+  #fade_out{
+    position:relative;
+    height:100%;
+    width:auto;
+    margin:0 auto;
+  }  
+  #fade_out img{
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 2s linear;
+    -moz-transition: opacity 2s linear;
+    transition: opacity 2s linear;
+  }  
+  #fade_out img.top:hover{
+    opacity:0;
+  }
+  aside img{
+    width: calc(120% - 260px); 
+  }
+  aside img.cover{
+    object-fit: cover;
+  }
+/* Estilo footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    /*background-color: black;*/
+    background: transparent;
+    margin: 10px;
+    padding: 0.2px;
+    width: 95%;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+/* Página Contacto */
+section form label{
+    display: block;
+}
+Legend h1{
+    background: black;
+    color: white;
+    /*text-transform: uppercase;*/
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section form input[type="text"]{
+    width: 400px;
+    height: 25px;
+}
+section form input[type="sumbit"]{
+    display: block;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+section form input[type="sumbit"]:hover{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section fieldset{
+    border: 2px dotted black;
+    border-radius: 10px;
+    float: left;
+    margin: 0px;
+    padding: 8px;
+    width: 60%;
+}
+/* Primer archivo CSS realizado por Oscar Cardeña Gutiérrez */
