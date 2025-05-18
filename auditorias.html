@@ -14,20 +14,28 @@
       background-color: #ececec;
       text-align: justify;
   }
-  .contenedor {
+  /*.contenedor {
       width: 100%;
       margin: 0 auto;
       padding: 30px 10px;
-  }
+  } */
+  #contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ #contenedor > div {
+  width: 50%;
+ }
   @media (max-width: 600px) {
       .contenedor {
           width: 90%;
       }
   }
-    footer {
-      position: absolute;
+  footer {
+      position: relative;
       bottom: 0;
-}
+ }
 </Style>
 <body class="bg-white text-gray-900">
   <nav class="bg-gray-900 text-white p-4 flex justify-between items-center">
@@ -38,33 +46,59 @@
   <div class="space-x-4">
     <a href="index.html">| Inicio |</a>
     <a href="servicios.html">| Servicios |</a>
-    <a href="auditorias.html">| Auditorías |</a>
+    <a href="auditorias.html">|<mark> <strong>Auditorías</strong> </mark>|</a>
     <a href="quienes-somos.html">| Quiénes somos |</a>
     <a href="contacto.html">| Contacto |</a>
   </div>
 </nav>
 <section class="py-10 px-4 max-w-6xl mx-auto">
   <h2 class="text-3xl font-bold mb-6 text-center">Auditorías realizadas</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-    <div class="shadow-lg rounded-lg overflow-hidden bg-white">
-      <img src="https://images.unsplash.com/photo-1581093588401-22f80b52a71e" class="w-full h-48 object-cover">
-      <div class="p-4">
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">HTB - Cap</h3>
-        <iframe class="w-full h-52 mb-4" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        <a href="pdfs/cap-auditoria.pdf" class="text-blue-600 underline" target="_blank">Ver informe en PDF</a>
+  <div id="contenedor">
+    <div id="columna1">
+      <!-- Contenido de la primera columna -->
+    <!--<div class="grid md:grid-cols-2 gap-6">-->
+      <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <img src="img/Cap2HTB.jpg" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">HTB - Cap</h3>
+          <!-- <iframe class="w-full h-52 mb-4" src="https://youtu.be/zrWCCn4gJsY" frameborder="0" allowfullscreen></iframe>-->
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dPAL7_FuQ8M?autohide=1" allowfullscreen></iframe>-->
+          <iframe class="w-full h-52 mb-4" src="https://www.youtube.com/embed/dPAL7_FuQ8M?autohide=1" allowfullscreen></iframe>
+          <a href="archivos/Informe_Auditoria_Cap_Grupo13.pdf" class="text-blue-600 underline" target="_blank">Ver informe en PDF</a>
+        </div>
       </div>
+    <!--</div>-->
+    </div>
+  <br/>
+  <style>
+    #contenedor > div {
+     column-gap: 20px; /* Espacio entre las columnas */
+    }
+  </style>
+  <br/>
+    <div id="columna2">
+      <!-- Contenido de la segunda columna -->
+    <!--<div class="grid md:grid-cols-2 gap-6">-->
+      <div class="shadow-lg rounded-lg overflow-hidden bg-white">
+        <img src="img/Vaccine4HTB.jpg" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">HTB - Vaccine</h3>
+          <!--<iframe class="w-full h-52 mb-4" src="https://www.youtube.com/embed/dPAL7_FuQ8M?autohide=1" allowfullscreen></iframe>-->
+          <a href="archivos/Informe_Auditoria_Vaccine_Grupo13.pdf" class="text-blue-600 underline" target="_blank">Ver informe en PDF</a>
+        </div>
+      </div>
+    <!--</div>-->
     </div>
   </div>
 </section>
-
 </body>
-<Style>    
+<footer>
+  <!--<Style>    
     footer {
       position: absolute;
       bottom: 0;
-}
-</Style>
-<footer>
+    }
+  </Style>-->
     <img src="img/LinkiaFP.jpg" alt="Logo LinkiaFP" class="h-14 w-auto"> Copyright®  | Diseñado y Creado por <a href="https://www.motocoleccion.es">Grupo13</a>
 </footer>
 </html>
