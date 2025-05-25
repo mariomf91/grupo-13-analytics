@@ -5,6 +5,9 @@
   <title>Grupo13 Analytics</title>
   <!-- <link rel="stylesheet" type="text/css" href="css/estilo.css"/> -->
   <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="ruta/a/tu/calendario.js"></script>
+    <link rel="stylesheet" href="css/calendario.css">
 </head>
 <Style>    
   body {
@@ -24,8 +27,20 @@
           width: 90%;
       }
   }
+  #calendar-widget {
+    width: 300px;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
     footer {
-      position: relative;
+      position: absolute;
       bottom: 0;
 }
 </Style>
@@ -76,7 +91,6 @@
       <!--</div>
     </div>
   </div>-->
-
 </body>
 <footer>
     <img src="img/LinkiaFP.jpg" alt="Logo LinkiaFP" class="h-14 w-auto"> Copyright®  | Diseñado y Creado por <a href="https://www.motocoleccion.es">Grupo13</a>
